@@ -1,10 +1,11 @@
 const ContractAbi = require('../config/contract-abi.json');
 const { getContractInstance } = require('../utils/network')
 
-const contractInstance = getContractInstance(serviceAbi);
+const contractInstance = getContractInstance(ContractAbi);
 
     exports.getBusinessContractInfo = async (req, res) => {
         try {
+            const { contractId } = req.params;
             const foundBusinessContract = await contractInstance.getBusinessContractInfo(contractId);
             const prepareResult = {
                 price: foundBusinessContract[1].toString(),

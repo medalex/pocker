@@ -11,4 +11,7 @@ module.exports = {
   MONGO_URI: process.env.MONGO_URI,
   NODE_ENV: process.env.NODE_ENV,
   INITIAL_CHIPS_AMOUNT: 100000,
+  CONTRACT_ADDRESS: process.env.CONTRACT_ADDRESS,
+  PRIVATE_ADDRESS: process.env.PRIVATE_ADDRESS,
+
   }

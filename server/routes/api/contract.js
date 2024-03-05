@@ -4,6 +4,6 @@ const router = express.Router();
 
 const { getBusinessContractInfo } = require('../../controllers/contract');
 
-router.get('/info', getBusinessContractInfo);
+router.get('/info/:contractId', getBusinessContractInfo);
 
 module.exports = router;
