@@ -1,0 +1,6 @@
+/build
+.env
+/src/test.ts
+node_modules
+.idea/
+*.csv
